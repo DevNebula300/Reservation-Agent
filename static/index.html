@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a table at Bella Vista — our cozy Italian restaurant reservation assistant is available 24/7." />
+  <title>Bella Vista — Reserve a Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true"></span>
+        <div class="logo-text">
+          <span class="logo-name">Bella Vista</span>
+          <span class="logo-tagline">Italian Restaurant</span>
+        </div>
+      </div>
+      <div class="header-info">
+        <span class="hours-badge">Tue–Sun · 5 PM–10 PM</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Main chat layout ─────────────────────────────── -->
+  <main class="chat-layout" role="main">
+
+    <!-- Chat window -->
+    <section class="chat-window" aria-label="Conversation">
+
+      <!-- Messages area -->
+      <div id="messages" class="messages" role="log" aria-live="polite" aria-label="Chat messages">
+        <!-- Agent welcome message -->
+        <div class="message message--agent" role="listitem">
+          <div class="message__avatar" aria-hidden="true">BV</div>
+          <div class="message__bubble">
+            <p>Welcome to <strong>Bella Vista</strong>! 🍷 I'm here to help you reserve a table.</p>
+            <p>How can I assist you today?</p>
+            <div class="message__time" aria-label="Sent at start of session">Now</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing indicator (hidden by default) -->
+      <div id="typing-indicator" class="typing-indicator" aria-live="polite" aria-label="Agent is typing" hidden>
+        <div class="message__avatar" aria-hidden="true">BV</div>
+        <div class="typing-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar" role="form" aria-label="Send a message">
+        <label for="chat-input" class="sr-only">Type your message</label>
+        <textarea
+          id="chat-input"
+          class="input-bar__textarea"
+          placeholder="Type your message… (Enter to send)"
+          rows="1"
+          autocomplete="off"
+          aria-label="Message input"
+        ></textarea>
+        <button
+          id="send-btn"
+          class="input-bar__send"
+          aria-label="Send message"
+          title="Send (Enter)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+          </svg>
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

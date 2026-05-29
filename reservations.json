@@ -1,0 +1,52 @@
+{
+  "reservations": [
+    {
+      "confirmation_code": "BV-DEMO",
+      "date": "2026-05-30",
+      "time": "19:00",
+      "party_size": 4,
+      "table_id": "T5",
+      "guest_name": "Alex Rivera",
+      "phone": "555-0123",
+      "notes": "",
+      "status": "confirmed",
+      "created_at": "2026-05-29T09:56:19.503808Z"
+    },
+    {
+      "confirmation_code": "BV-0EP5",
+      "date": "2026-05-31",
+      "time": "18:00",
+      "party_size": 4,
+      "table_id": "T5",
+      "guest_name": "Riley Hen",
+      "phone": "090909090",
+      "notes": "",
+      "status": "confirmed",
+      "created_at": "2026-05-29T11:30:30.950034Z"
+    },
+    {
+      "confirmation_code": "BV-RDXL",
+      "date": "2026-05-30",
+      "time": "19:00",
+      "party_size": 5,
+      "table_id": "T11",
+      "guest_name": "Tyre Corola",
+      "phone": "345-1243-56",
+      "notes": "",
+      "status": "confirmed",
+      "created_at": "2026-05-29T11:44:14.362686Z"
+    },
+    {
+      "confirmation_code": "BV-306U",
+      "date": "2026-06-02",
+      "time": "20:30",
+      "party_size": 3,
+      "table_id": "T5",
+      "guest_name": "roni miller",
+      "phone": "23140268247",
+      "notes": "",
+      "status": "confirmed",
+      "created_at": "2026-05-29T12:31:52.406263Z"
+    }
+  ]
+}
